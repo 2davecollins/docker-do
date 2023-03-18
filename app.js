@@ -12,8 +12,9 @@ app.set('view engine', 'html');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path));
 app.use('/sharks', sharks);
+console.log(port);
 
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log(`app listening on port $(port)!`)
 })
