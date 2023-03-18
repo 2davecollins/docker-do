@@ -14,7 +14,6 @@ app.use(express.static(path));
 app.use('/sharks', sharks);
 
 
-
-app.listen(port, function () {
+app.listen(3000, function () {
   console.log(`app listening on port $(port)!`)
 })
